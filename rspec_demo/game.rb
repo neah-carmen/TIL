@@ -1,9 +1,13 @@
 # demo from https://relishapp.com/rspec/docs/gettingstarted
 # game.rb
 class Game
-  def roll(pins) end
+  attr_accessor :score
 
-  def score
-    0
+  def initialize
+    @score = 0
+  end
+
+  def roll(pins)
+    @score += pins
   end
 end
