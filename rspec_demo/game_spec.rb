@@ -1,4 +1,3 @@
-# demo from https://relishapp.com/rspec/docs/gettingstarted
 # game_spec.rb
 require "./game"
 
