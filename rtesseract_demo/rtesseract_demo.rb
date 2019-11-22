@@ -1,6 +1,8 @@
 require "rtesseract"
 
 scanning = RTesseract.new("ocr_test.png")
-scanning.to_s
+text = scanning.to_s
 
-puts scanning
+text.split("\n").each do |line|
+  p line
+end
